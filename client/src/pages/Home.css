@@ -1,0 +1,77 @@
+/* Container to split left and right sections */
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Left side with description and picture */
+.home-left {
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-left h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.home-left p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.profile-picture {
+    width: 500px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px;
+}
+
+.vertical-separator {
+    position: absolute; /* Position the line absolutely within the container */
+    top: 78px; /* Start just below the navbar (adjust height as needed) */
+    left: 50%;
+    transform: translateX(-50%); /* Center the line horizontally */
+    width: 2px; /* Width of the vertical line */
+    height: calc(100vh - 60px); /* Full height minus the height of the navbar */
+    background-color: #177199; /* Light grey color for the line */
+    z-index: 10; /* Ensure it's above other content */
+}
+
+/* Right side with login and register links */
+.home-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between links */
+    text-align: center;
+}
+
+.auth-link {
+    padding: 15px;
+    border: 2px solid #007bff;
+    color: #007bff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+    width: 150px; /* Adjust based on your preference */
+    margin: 0 auto;
+}
+
+.auth-link:hover {
+    background-color: #007bff;
+    color: white;
+}

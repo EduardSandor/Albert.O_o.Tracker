@@ -1,0 +1,11 @@
+/* Basic styling for your components */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+input, textarea, button {
+    margin: 10px 0;
+}
